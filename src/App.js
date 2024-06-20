@@ -6,12 +6,17 @@ import ShouldComponentUpdateExample from './Components/ShouldComponentUpdateExam
 import GetSnapshotBeforeUpdateExample from './Components/GetSnapshotBeforeUpdateExample';
 import ComponentDidUpdateExample from './Components/ComponentDidUpdateExample';
 import ComponentWillUnmountExample from './Components/ComponentWillUnmountExample';
+import Color from './Components/Color';
 import './App.css';
 
 function App() {
   return (
     <div>
       <h1>React Lifecycle Methods Examples</h1>
+      <hr />
+      <h2>Color Example</h2>
+      <Color favCol="yellow" />
+      <hr />
       <h2>Constructor Example</h2>
       <ConstructorExample />
       <hr />

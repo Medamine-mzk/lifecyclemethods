@@ -5,11 +5,12 @@ class DerivedStateExample extends React.Component {
     super(props);
     this.state = { data: null };
   }
-
-  // Cette méthode est appelée avant chaque rendu, que ce soit au montage ou à la mise à jour
+  // Cette méthode est appelée avant chaque rendu, 
+  // que ce soit au montage ou à la mise à jour
   static getDerivedStateFromProps(props, state) {
     if (props.data !== state.data) {
-      return { data: props.data }; // Met à jour l'état si les props ont changé
+      // Met à jour l'état si les props ont changé
+      return { data: props.data }; 
     }
     return null; // Ne met pas à jour l'état sinon
   }

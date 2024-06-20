@@ -8,7 +8,8 @@ class ShouldComponentUpdateExample extends React.Component {
 
   // Cette méthode décide si le composant doit être mis à jour
   shouldComponentUpdate(nextProps, nextState) {
-    return nextState.count !== this.state.count; // Retourne vrai si l'état a changé
+    // Retourne vrai si l'état a changé
+    return nextState.count !== this.state.count; 
   }
 
   render() {
