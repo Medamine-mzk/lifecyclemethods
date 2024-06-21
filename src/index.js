@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MonComposant from './Components/MonComposant';
+import Formulaire from './Components/Formulaire';
+import TextAreaForm from './Components/TextAreaForm';
+import SelectForm from './Components/SelectForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <MonComposant /> */}
-    <App />
+    <SelectForm />
   </React.StrictMode>
 );
 
