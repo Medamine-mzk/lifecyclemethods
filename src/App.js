@@ -7,11 +7,15 @@ import GetSnapshotBeforeUpdateExample from './Components/GetSnapshotBeforeUpdate
 import ComponentDidUpdateExample from './Components/ComponentDidUpdateExample';
 import ComponentWillUnmountExample from './Components/ComponentWillUnmountExample';
 import Color from './Components/Color';
+import Compteur from './Components/Compteur';
 import './App.css';
 
 function App() {
   return (
     <div>
+        <h1>Exercice de gestion de compteur</h1>
+        <Compteur />
+      <hr />
       <h1>React Lifecycle Methods Examples</h1>
       <hr />
       <h2>Color Example</h2>
