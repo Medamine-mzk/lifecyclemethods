@@ -8,9 +8,41 @@ import ComponentDidUpdateExample from './Components/ComponentDidUpdateExample';
 import ComponentWillUnmountExample from './Components/ComponentWillUnmountExample';
 import Color from './Components/Color';
 import Compteur from './Components/Compteur';
+import Home from './ComponentsRouting/Home';
+import Contact from './ComponentsRouting/Contact';
+import About from './ComponentsRouting/About';
+
 import './App.css';
 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 function App() {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+  /*
   return (
     <div>
         <h1>Exercice de gestion de compteur</h1>
@@ -44,6 +76,7 @@ function App() {
       <hr />
     </div>
   );
+  */
 }
 
 export default App;
