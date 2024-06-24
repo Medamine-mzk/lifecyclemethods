@@ -7,12 +7,13 @@ import MonComposant from './Components/MonComposant';
 import Formulaire from './Components/Formulaire';
 import TextAreaForm from './Components/TextAreaForm';
 import SelectForm from './Components/SelectForm';
-
+import UserList from './Components/UserList';
+import ListPerson from './Components/ListPerson';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <MonComposant /> */}
-    <App />
+    <ListPerson />
   </React.StrictMode>
 );
 
